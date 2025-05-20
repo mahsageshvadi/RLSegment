@@ -24,3 +24,8 @@ TestResults.xml
 *.conda
 # Build directory
 .build/
+# macOS system files
+.DS_Store
+
+# Build directory
+build/
