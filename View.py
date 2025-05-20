@@ -16,8 +16,14 @@ class View(QMainWindow):
         self.last_mouse_pos = QPoint()
         self.mouse_pos_down = QPoint()
         self.mouse_pressed = False
+        self.is_mouse_down = False
 
         self.resize(800, 600)
+
+        # Enable mouse tracking
+        self.setMouseTracking(True)
+        self.imageLabel.setMouseTracking(True)
+        self.imageLabel.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
 
     def load_image(self, image_path):
         pixmap = QPixmap(image_path)
