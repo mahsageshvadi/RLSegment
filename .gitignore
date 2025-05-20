@@ -28,4 +28,4 @@ TestResults.xml
 .DS_Store
 
 # Build directory
-build/
+build/__pycache__/
